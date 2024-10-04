@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif; /* Change font to Arial */
+}
+
+nav {
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px;
+  border-radius: 0 0 15px 15px;
+}
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #f0eaea; /* Changed color to lighter gray */
+  text-decoration: none;
+  font-size: 16px; /* Increased font size */
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+
+nav ul li a:hover {
+  background-color: #0e34c6;
+  color: #ffffff; /* Ensures text turns pure white on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+
+/* Responsive design for smaller screens */
+@media (max-width: 769px) {
+  nav {
+    flex-direction: column;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  nav a {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    padding: 0.5rem 0.8rem;
+  }
+}
